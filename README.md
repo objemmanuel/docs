@@ -1,168 +1,25 @@
-# Qitmeer Docs
+# Introduction :: Qitmeer Documentation
 
-Qitmeer is an Open-Source community and welcome everyone to give contribution with their own talent. In addition to coding, documentation is also an important work to share knowledge with the community. Here are the steps how we share our expererience of Qitmeer.
+**Bitcoin and Blockchain**
 
-## Install Hugo
+Bitcoin was born with revolution, and it opened a new world that currency issuance becomes open and fair by a cryptography-based decentralized payment network. With the arrival of 10-years birth of bitcoin, the blockchain infrastructure is facing various challenges from technical aspects. The underlying mechanism of Bitcoin, the blockchain, was found capable of playing a significant role in the financial field.
 
-Qitmeer Docs is powered by Hugo static web generator, it could convert Markdown articles to HTML pages. Therefore, you could focus on content authoring and let Hugo handle website styling and management. Besides, the generated  HTML pages are staic, which means they are secure and fast to load.
+a blockchain is an immutable transaction database, which maintained by peer nodes which communicated with each other within a Peer-to-Peer distributed network. For each peer, which validate and apply transactions according to a consensus protocol. The transcations grouped into blocks that linked by a hash from one block to the preceding block, aka _the chain of block_ which is the name of blockchain is coming from.
 
-You may install Hugo by budiling from source code.
+**Qitmeer BlockDAG**
 
-```sh
-$ mkdir $HOME/src
-$ cd $HOME/src
-$ git clone https://github.com/gohugoio/hugo.git
-$ cd hugo
-$ go install
+Qitmeer regards openness,fairness, fault tolerance, scalability as the core metrics to assess a promising blockchain paradigm, and a blockchain system achieved a desirable balance among these metrics is regarded as Classical Blockchain Setting.
 
-$ hugo version
-hugo v0.92.0-DEV darwin/amd64 BuildDate=unknown
-```
+Qitmeer use SPECTRE as its fundamental Consensus protocol. SPECTRE is a fast-confirmation and high-throughput BlockDAG protocol(Directed Acyclic Graph of blocks, a blockDAG), which guarantees high performance in a payment network. Additionally, Qitmeer introduces another high-throughput BlockDAG protocol GhostDAG, which is highlighted on unprecedentedly supporting transactions linearly ordering, to circumvent SPECTRE’s weak liveness and provide ordering service for the fair scheme of the reward system.
 
-Or follow this tutorial to install a prebuilt version.
+**Qitmeer POW**
 
-https://gohugo.io/getting-started/installing
+Qitmeer Consensus is compliant with Classical Blockchain Setting - it could enter and leave network freely by Proof-of-Work, and the collaboration model of DAG ledger guarantees that miners gain rewards consistent with their devotion, 50% faulty tolerance as secure as bitcoin, robust scalability that is only subject to physical network limit. The mining algorithm is also a vital source of fairness other than consensus algorithm per se. Cuckoo Ring is a graph theory based proof-of-work mining algorithm and is practically ASIC resistant due to memory-hard calculation.
 
-## Depoit Qitmeer Docs locally
+**Qitmeer token & Islamic financial ecosystem**
 
-First, you need to fork Qitmeer Docs repo ("**https://github.com/qitmeer/docs"**) to your own github namespace, which is "**https://github.com/forchain/docs**" in this case.
+Qitmeer originates a UTXO-based unique token insurance scheme, which has effectively answered two main concerns: Intrinsic Value and Assets Authentication. Issuing a certain amount of assets must consume a certain amount of the native currency; moreover, entities must be warranted a license to issue assets.
 
-Then, download source code and launch web server:
+Qitmeer devises a family of specifications and protocols to embrace the whole Islamic financial ecosystem, such as wallet and miners. As for interoperability, Qitmeer calls for utilizing cross-chain protocols to integrate various cryptocurrencies and offer reliable off-chain smart contract services.
 
-```sh
-$ git clone https://github.com/forchain/docs ~/github.com/forchain/docs 
-$ cd ~/github.com/forchain/docs/Document
-$ hugo serve
-...
-Web Server is available at http://localhost:1313/docs/ (bind address 127.0.0.1)
-Press Ctrl+C to stop
-```
-
-Open browser and test website is accesible. Address: **http://localhost:1313/docs/**
-
-![Launch Docs](./Document/static/images/contribute-docs/launch-website.png)
-
-> Figure1. Launch Qitmeer Docs
-
-## New document file
-
-We need to create a subfolder under  the **content** folder and then new a file named **_index.en.md** inside it.
-
-You may complete those steps by one Hugo command:
-
-```sh
-# ensure you are under path ./Document
-$ hugo new content/tutorials/contribute-docs/_index.en.md
-```
-
-#### Note
-
-1. the name of the subfolder must be in **hyphen-case** style, in this case, **"contribute-docs"**
-1. the **en** part indicates the language, you may subsititue with other languages, for instance, **cn** stands for Chinese. Or you may drop this part to disable the multiple language support, then it would be like "**_index.md**"
-2. The parts of the path are in line with the sitemap in the the left panel, for this case, this article is placed under **Tutorials** category.
-
-![Doc category](./Document/static/images/contribute-docs/doc-category.png)
-
-> Figure 2. Doc category
-
-### Add link in index page
-
-There is an index page include all the links under each category, it is located at the parent folder of the containing folder of document, which is **content/tutorials/_index.en.md** for this tutorial.
-
-```markdown
-- [Contribute Docs](./contribute-docs)
-```
-
-#### Note
-
-1. it is a *relative* link to the *containing* folder
-2. The link cannot contain whitespaces, that's why the naming style of the containing folder must be **hyper-case**.
-
-## Edit document
-
-### Front Matter
-
-From the file extension "**.md**", we could infer that it is a markdown document. Actually, it is an extented markdown file. We need to add some annoation in the front of the file, we could this **"Front Matter"**.
-
-For this tutorial, it would be:
-
-```markdown
----
-title: Contribute Qitmeer Docs
-
-# Represents the sorting position of the sidebar
-weight: 1
-
-# According to the serial number
-pre: "<b>1. </b>"
-
-# When true, the page paragraph is displayed in the center
-chapter: true
-
-# This option needs to be set if the page has formula content
-mathjax: true
----
-```
-
-The essential configuration item is "**title**", which is "**Contribute Qitmeer Docs**" in this case. You may modify other config items if needed, such as "**weight**", "**chapter**", ..., the comments above.
-
-### Markdown Content
-
-Below the front matter separator '**---**', you may fill the content of articles with markdown format. For this tutorial as example, it would be:
-
-```markdown
-...
-mathjax: true
----
-
-Qitmeer is an Open-Source community and welcome everyone to give contribution with their own talent. In addition to coding, documentation is also an important work to share knowledge with the community. Here are the steps how we share our expererience of Qitmeer.
-
-## Install Hugo
-...
-```
-
-#### **Note**
-
-Hugo will insert the title configured in Front Matter, so we should **NOT** add title in the content.
-
-### Images
-
-The markdown is a text file and cannot embed images, therfore you should upload the images in a specified folder and add links to them.
-
-For this tutorial, we already two figures. We make a folder under "**Document/static/images**", let's say "**contribute-docs**" for placing images dedicated to this tutorial, then move the images from their original folder to the newly created folder.
-
-```sh
-$ mkdir -p Document/static/images/contribute-docs
-$ mv "/Users/Outlier/Library/Application Support/typora-user-images/image-20211218192001885.png" Document/static/images/contribute-docs/launch-website.png
-$ mv "/Users/Outlier/Library/Application Support/typora-user-images/image-20211220190939112.png" Document/static/images/contribute-docs/doc-category.png
-```
-
-At last, replace the image links with new path. Note, the path should be a website absolute path rather than a local path, leading by "**/image**".
-
-Therefore, find the two links in the file of this document:
-
-```markdown
-![Launch Docs](/Users/Outlier/Library/Application Support/typora-user-images/image-20211218192001885.png)
-![Doc category](/Users/Outlier/Library/Application Support/typora-user-images/image-20211220190939112.png)
-```
-
-Replace them with respectively:
-
-```markdown
-![Launch Docs](/images/contribute-docs/launch-website.png)
-![Doc category](/images/contribute-docs/doc-category.png)
-```
-
-## Submit documents
-
-Qitmeer has a workflow to automate the tedious work of publishing in GitHub Pages, see: 
-
-https://github.com/Qitmeer/docs/blob/master/.github/workflows/gh-pages.yml.
-
-Therfore, all you have to do is just submit the changes to Github and make pull request to the upstream branch.
-
-```sh
-$ git add .
-$ git commit -m"contribute qitmeer docs"
-$ git push
-```
+[**Qitmeer mining difficulty adjustment**](<.gitbook/assets/qitmeer difficulty description>)

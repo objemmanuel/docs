@@ -4,38 +4,38 @@
 
 **Block**
 
-* [getBestBlockHash](https://qitmeer.github.io/docs/en/json-rpc-api/getbestblockhash)
-* [getBlock](https://qitmeer.github.io/docs/en/json-rpc-api/getblock)
-* [getBlockByNum](https://qitmeer.github.io/docs/en/json-rpc-api/getblockbynum)
-* [getBlockByOrder](https://qitmeer.github.io/docs/en/json-rpc-api/getblockbyorder)
-* [getBlockCount](https://qitmeer.github.io/docs/en/json-rpc-api/getblockcount)
-* [getBlockhash](https://qitmeer.github.io/docs/en/json-rpc-api/getblockhash)
-* [getBlockhashByRange](https://qitmeer.github.io/docs/en/json-rpc-api/getblockhashbyrange)
-* [getBlockHeader](https://qitmeer.github.io/docs/en/json-rpc-api/getblockheader)
-* [getBlockTotal](https://qitmeer.github.io/docs/en/json-rpc-api/getblocktotal)
-* [getCoinbase](https://qitmeer.github.io/docs/en/json-rpc-api/getcoinbase)
-* [getMainChainHeight](https://qitmeer.github.io/docs/en/json-rpc-api/getmainchainheight)
-* [getOrphansTotal](https://qitmeer.github.io/docs/en/json-rpc-api/getorphanstotal)
-* [isBlue](https://qitmeer.github.io/docs/en/json-rpc-api/isblue)
-* [isCurrent](https://qitmeer.github.io/docs/en/json-rpc-api/iscurrent)
-* [isOnMainChain](https://qitmeer.github.io/docs/en/json-rpc-api/isonmainchain)
-* [tips](https://qitmeer.github.io/docs/en/json-rpc-api/tips)
+* [getBestBlockHash](getbestblockhash-qitmeer-documentation.md)
+* [getBlock](getblock-qitmeer-documentation.md)
+* [getBlockByNum](getblockbynum-qitmeer-documentation.md)
+* [getBlockByOrder](getblockbyorder-qitmeer-documentation.md)
+* [getBlockCount](getblockcount-qitmeer-documentation.md)
+* [getBlockhash](getblockhash-qitmeer-documentation.md)
+* [getBlockhashByRange](getblockhashbyrange-qitmeer-documentation.md)
+* [getBlockHeader](getblockheader-qitmeer-documentation.md)
+* [getBlockTotal](getblocktotal-qitmeer-documentation.md)
+* [getCoinbase](getcoinbase-qitmeer-documentation.md)
+* [getMainChainHeight](getmainchainheight-qitmeer-documentation.md)
+* [getOrphansTotal](getorphanstotal-qitmeer-documentation.md)
+* [isBlue](isblue-qitmeer-documentation.md)
+* [isCurrent](iscurrent-qitmeer-documentation.md)
+* [isOnMainChain](isonmainchain-qitmeer-documentation.md)
+* [tips](tips-qitmeer-documentation.md)
 
 **Chain**
 
-* [getNodeInfo](https://qitmeer.github.io/docs/en/json-rpc-api/getnodeinfo)
-* [getPeerInfo](https://qitmeer.github.io/docs/en/json-rpc-api/getpeerinfo)
+* [getNodeInfo](getnodeinfo-qitmeer-documentation.md)
+* g[etPeerInfo](getpeerinfo-qitmeer-documentation.md)
 
 **Miner**
 
-* [getBlockTemplate](https://qitmeer.github.io/docs/en/json-rpc-api/getblocktemplate)
-* [submitBlock](https://qitmeer.github.io/docs/en/json-rpc-api/submitblock)
+* [getBlockTemplate](getblocktemplate-qitmeer-documentation.md)
+* submitBlock
 
 **Transaction**
 
-* [createRawTransaction](https://qitmeer.github.io/docs/en/json-rpc-api/createrawtransaction)
-* [decodeRawTransaction](https://qitmeer.github.io/docs/en/json-rpc-api/decoderawtransaction)
-* [getRawTransaction](https://qitmeer.github.io/docs/en/json-rpc-api/getrawtransaction)
-* [getUtxo](https://qitmeer.github.io/docs/en/json-rpc-api/getutxo)
-* [sendRawTransaction](https://qitmeer.github.io/docs/en/json-rpc-api/sendrawtransaction)
-* [txSign](https://qitmeer.github.io/docs/en/json-rpc-api/txsign)
+* createRawTransaction
+* decodeRawTransaction
+* getRawTransaction
+* getUtxo
+* sendRawTransaction
+* txSign

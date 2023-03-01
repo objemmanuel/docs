@@ -29,13 +29,13 @@
 **Miner**
 
 * [getBlockTemplate](getblocktemplate-qitmeer-documentation.md)
-* submitBlock
+* [submitBlock](submitblock-qitmeer-documentation.md)
 
 **Transaction**
 
-* createRawTransaction
-* decodeRawTransaction
-* getRawTransaction
-* getUtxo
+* [createRawTransaction](createrawtransaction-qitmeer-documentation.md)
+* [decodeRawTransaction](decoderawtransaction-qitmeer-documentation.md)
+* [getRawTransaction](getrawtransaction-qitmeer-documentation.md)
+* [getUtxo](getutxo-qitmeer-documentation.md)
 * sendRawTransaction
 * txSign
